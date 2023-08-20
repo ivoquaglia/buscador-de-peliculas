@@ -7,25 +7,25 @@ let urlBase = "https://api.themoviedb.org/3/search/movie";
 let urlImg = "https://image.tmdb.org/t/p/w500"
 let resultadoContainer = document.getElementById("results");
 
-function searchMovies () {
+function searchMovies() {
     resultadoContainer.innerHTML = "Cargando...";
     let searchInput = document.getElementById("searchInput").value;
-    
+
     fetch(`${urlBase}?query=${searchInput}&api_key=${api_key}`)
-    .then(response => response.json())
-    .then(response => displayMovies(response.results));
+        .then(response => response.json())
+        .then(response => displayMovies(response.results));
 }
 
 
-function displayMovies (movies){
+function displayMovies(movies) {
     resultadoContainer.innerHTML = "";
 
-    if (movies.length === 0){
+    if (movies.length === 0) {
         resultadoContainer.innerHTML = "<p> No se encontraron resultados para tu busqueda </p>"
         return;
     }
 
-    movies.forEach( movie => {
+    movies.forEach(movie => {
         let movieDiv = document.createElement("div");
         movieDiv.classList.add("movie");
 
@@ -47,7 +47,5 @@ function displayMovies (movies){
 
     });
 }
-
-
 
 

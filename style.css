@@ -1,79 +1,85 @@
-body{
+body {
   background-color: #080f28;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 30vh;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
 
-  }
-  
-  h1 {
-    color: #999;
-  }
-  
-  input[type="text"] {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 20px;
-    text-align: center;
-    margin-bottom: 12px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007aff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-  }
-  
-  #results {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 20px;
-    text-align: center;
-    margin: 20px;
-    color: #fff;
-  }
-  
-  .movie {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 400px;
-    margin: 20px;
-    padding: 10px;
-    background-color: #007aff;
-    border-radius: 20px;
-  }
-  
-  .movie img {
-    width: 250px;
-    height: 250px;
-    float: left;
+}
 
-  }
-  
-  .movie h2 {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #333; 
-  }
-  
-  p {
-    margin: 5px 0;
-    color: #fff;
-    text-align: center;
-  }
-  
+h1 {
+  color: #999;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  color: #fff;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  padding: 10px;
+  /* background-color: #007aff; */
+  border-radius: 20px;
+}
+
+.movie img {
+  width: 250px;
+  height: 250px;
+  float: left;
+
+}
+
+.movie h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+p {
+  margin: 5px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.movie:hover {
+  transform: scale(1.5, 1.5);
+  transition: transform .6s;
+}
